@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareMed | Professional Medical Equipment</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="static/css/homepage.css">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle" style="display: none;">
+
+    <div class="side-drawer">
+        <div class="drawer-header">
+            <a href="homepage.html" style="text-decoration: none;">
+                <div class="nav-logo">Care<span>Med</span></div>
+            </a>
+                <div class="user-avatar" id="mobileAvatarContainer">
+                    <span class="material-symbols-outlined icon-placeholder">account_circle</span>
+                </div>
+        </div>
+
+        <div class="drawer-links">
+            <div class="mobile-user-info auth-only">
+                <div class="user-avatar">AD</div>
+                <div class="user-details">
+                    <span class="user-name">Alex Doe</span>
+                    <span class="user-role">Member</span>
+                </div>
+            </div>
+
+            <a href="product_gallery.html">
+                <span class="material-symbols-outlined">shopping_bag</span> Shop Equipment
+            </a>
+            <a href="#about">
+                <span class="material-symbols-outlined">info</span> About Us
+            </a>
+
+            <a href="profile.html" class="auth-only">
+                <span class="material-symbols-outlined">person</span> My Profile
+            </a>
+            <hr class="auth-only" style="border: none; border-top: 1px solid #eee; margin: 10px 0;">
+            <a href="logout" class="logout-link-mobile auth-only">
+                <span class="material-symbols-outlined">logout</span> Sign Out
+            </a>
+
+            <a href="login.html" class="mobile-account-btn guest-only">
+                <span class="material-symbols-outlined">person</span> Account
+            </a>
+        </div>
+    </div>
+
+    <label for="nav-toggle" class="drawer-overlay"></label>
+
+    <nav>
+        <a href="homepage.html" style="text-decoration: none;">
+            <div class="nav-logo">Care<span>Med</span></div>
+        </a>
+
+        <div class="nav-links">
+            <a href="user_products.html" class="nav-shop-link">
+                <span class="material-symbols-outlined">shopping_bag</span> Shop Equipment
+            </a>
+            <a href="#about" style="text-decoration: none; color: #333;">About Us</a>
+
+            <a href="login.html" class="nav-account-btn guest-only">
+                <span class="material-symbols-outlined">person</span> Account
+            </a>
+            <a href="product_gallery.html" class="nav-cta-btn guest-only">Rent Now</a>
+
+            <div class="user-profile-widget auth-only" id="profileDropdown">
+                <div class="profile-trigger" onclick="toggleDropdown()">
+                    <div class="user-avatar" id="navAvatarContainer">
+                        <span class="material-symbols-outlined icon-placeholder">account_circle</span>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Alex Doe</span>
+                        <span class="user-role">Member</span>
+                    </div>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined">person</span> My Profile
+                    </a>
+                    <a href="orders.html">
+                        <span class="material-symbols-outlined">history</span> My Rentals
+                    </a>
+                    <hr>
+                    <a href="logout" class="logout-item">
+                        <span class="material-symbols-outlined">logout</span> Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <label for="nav-toggle" class="hamburger-icon">
+            <span class="material-symbols-outlined">menu</span>
+        </label>
+    </nav>
+
+    <section class="main-hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Premium Home Medical Equipment Rental</span>
+            <h1>Hospital-Grade Care <br> <span class="highlight-green">In Your Own Home</span></h1>
+            <p>From recovery to long-term care, we provide affordable, high-quality medical equipment rentals with
+                expert setup and 24/7 support.</p>
+
+            <div class="hero-action-group">
+                <a href="#headerRow" class="hero-btn">VIEW EQUIPMENT</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-nav">
+        <h2>Browse by Category</h2>
+        <div class="category-grid">
+            <a href="product_gallery.html?cat=beds" class="category-card">
+                <span class="material-symbols-outlined">bed</span>
+                Hospital Beds
+            </a>
+            <a href="user_products?cat=mobility" class="category-card">
+                <span class="material-symbols-outlined">accessible</span>
+                Mobility Aids
+            </a>
+            <a href="product_gallery.html?cat=oxygen" class="category-card">
+                <span class="material-symbols-outlined">gas_meter</span>
+                Oxygen Therapy
+            </a>
+            <a href="product_gallery.html?cat=monitoring" class="category-card">
+                <span class="material-symbols-outlined">monitor_heart</span>
+                Monitoring
+            </a>
+        </div>
+    </section>
+
+    <section class="about-us-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="hero-subtitle" style="color: #52B788; font-size: 40px;">About CareMed </span>
+                <h2>Your Trusted Partner in <br><span class="highlight-blue">Home Recovery</span></h2>
+                <p>At CareMed, we believe that the best place for healing is at home. Since 2010, we have been dedicated
+                    to providing Iloilo City with hospital-grade equipment that is both affordable and reliable.</p>
+                <p>Our mission is to bring comfort to your doorstep, ensuring every patient receives the care they
+                    deserve with the best tools available.</p>
+                <div class="contact-info-mini">
+                    <p><span class="material-symbols-outlined">location_on</span> Oñate de Leon, Mandurriao, Iloilo City
+                    </p>
+                    <p><span class="material-symbols-outlined">call</span> 0912-585-6730 | 0956-554-6832</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="static/image/630943445_1699934767636577_2518154941454885940_n.jpg"
+                    alt="CareMed Support Staff">
+            </div>
+        </div>
+    </section>
+
+    <main class="gallery-container">
+        <section class="trust-features">
+            <div class="feature-card">
+                <span class="material-symbols-outlined feature-icon">verified_user</span>
+                <h4>Quality Guaranteed</h4>
+                <p>All items are sanitized and medical-grade certified.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-outlined feature-icon">local_shipping</span>
+                <h4>Fast Delivery</h4>
+                <p>Immediate dispatch within 24 hours, Free Setup in most areas.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-outlined feature-icon">support_agent</span>
+                <h4>24/7 Support</h4>
+                <p>Our medical experts are ready to help you anytime.</p>
+            </div>
+        </section>
+
+        <section class="rental-highlights">
+            <div class="highlights-header">
+                <span class="highlight-subtitle">Explore Our</span>
+                <h2 class="highlight-title">Rental Highlights</h2>
+            </div>
+
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="card-number">01</div>
+                    <span class="material-symbols-outlined highlight-icon">bed</span>
+                    <h3>Electric Hospital Bed</h3>
+                    <p>Fully electric bed with adjustable settings, ideal for recovery and comfort at home.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="card-number">02</div>
+                    <span class="material-symbols-outlined highlight-icon">accessible</span>
+                    <h3>Standard Wheelchair</h3>
+                    <p>Lightweight, foldable wheelchair for easy transport and daily mobility support.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="card-number">03</div>
+                    <span class="material-symbols-outlined highlight-icon">gas_meter</span>
+                    <h3>Oxygen Tanks</h3>
+                    <p>Available in multiple sizes (5-50lbs) with regulator and accessories for safe use.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <header class="header-row" id="headerRow">
+            <h2 class="section-title">Rental & Sales Catalog</h2>
+            <p class="section-subtitle">Home Care Essentials</p>
+        </header>
+
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card" data-name="Manual Hospital Bed">
+                <div class="stock-badge">✓ IN STOCK</div>
+
+                <div class="product-image-box">
+                    <img src="" alt="" class="product-img-element">
+                    <div class="no-image-placeholder"></div>
+                </div>
+                <h3 class="product-name">Manual Hospital Bed</h3>
+
+                <div class="trust-badge"><span class="material-symbols-outlined" style="font-size:16px;">verified</span>
+                    Sanitized & Certified</div>
+
+                <ul class="product-specs">
+                    <li><span class="material-symbols-outlined">zoom_out_map</span> Size: 36" x 80" (Standard)</li>
+                    <li><span class="material-symbols-outlined">fitness_center</span> Max Capacity: 150kg</li>
+                    <li><span class="material-symbols-outlined">settings_suggest</span> Adjustable Head & Feet</li>
+                </ul>
+
+                <div class="dual-price-wrapper">
+                    <div class="price-item">
+                        <span class="price-tag">RENT</span>
+                        <p class="price-value">₱4,500<small>/mo</small></p>
+                    </div>
+                    <div class="price-divider"></div>
+                    <div class="price-item">
+                        <span class="price-tag">BUY</span>
+                        <p class="price-value">₱25,000</p>
+                    </div>
+                </div>
+                <div class="dual-action-buttons">
+                    <button class="btn-rent" onclick="handleAction('rent', 'Manual Hospital Bed')">Rent Now</button>
+                    <button class="btn-buy" onclick="handleAction('buy', 'Manual Hospital Bed')">Purchase</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Electric Wheelchair">
+                <div class="stock-badge">✓ IN STOCK</div>
+
+                <div class="product-image-box"></div>
+                <h3 class="product-name">Electric Wheelchair</h3>
+
+                <div class="trust-badge"><span class="material-symbols-outlined" style="font-size:16px;">verified</span>
+                    Sanitized & Certified</div>
+
+                <ul class="product-specs">
+                    <li><span class="material-symbols-outlined">battery_charging_full</span> 20km Range per Charge</li>
+                    <li><span class="material-symbols-outlined">directions_walk</span> Foldable for Transport</li>
+                    <li><span class="material-symbols-outlined">bolt</span> Quiet Motor</li>
+                </ul>
+
+                <div class="dual-price-wrapper">
+                    <div class="price-item">
+                        <span class="price-tag">RENT</span>
+                        <p class="price-value">₱12,000<small>/mo</small></p>
+                    </div>
+                    <div class="price-divider"></div>
+                    <div class="price-item">
+                        <span class="price-tag">BUY</span>
+                        <p class="price-value">₱85,000</p>
+                    </div>
+                </div>
+                <div class="dual-action-buttons">
+                    <button class="btn-rent" onclick="handleAction('rent', 'Electric Wheelchair')">Rent Now</button>
+                    <button class="btn-buy" onclick="handleAction('buy', 'Electric Wheelchair')">Purchase</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Oxygen Tank Full Set">
+                <div class="stock-badge">✓ IN STOCK</div>
+
+
+                <div class="product-image-box"></div>
+                <h3 class="product-name">Oxygen Tank (Full Set)</h3>
+
+                <div class="trust-badge"><span class="material-symbols-outlined" style="font-size:16px;">verified</span>
+                    Sanitized & Certified</div>
+
+                <ul class="product-specs">
+                    <li><span class="material-symbols-outlined">air</span> Includes Regulator & Humidifier</li>
+                    <li><span class="material-symbols-outlined">gas_meter</span> Available: 5lbs / 10lbs</li>
+                    <li><span class="material-symbols-outlined">local_shipping</span> Free Setup Included</li>
+                </ul>
+
+                <div class="dual-price-wrapper">
+                    <div class="price-item">
+                        <span class="price-tag">RENT</span>
+                        <p class="price-value">₱1,200<small>/mo</small></p>
+                    </div>
+                    <div class="price-divider"></div>
+                    <div class="price-item">
+                        <span class="price-tag">BUY</span>
+                        <p class="price-value">₱8,500</p>
+                    </div>
+                </div>
+                <div class="dual-action-buttons">
+                    <button class="btn-rent" onclick="handleAction('rent', 'Oxygen Tank Full Set')">Rent Now</button>
+                    <button class="btn-buy" onclick="handleAction('buy', 'Oxygen Tank Full Set')">Purchase</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"CareMed made my father's recovery so much easier. The electric bed was delivered and set up
+                        within hours!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">MR</div>
+                        <div><strong>Maria R.</strong><br>Mandurriao</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Professional, sanitized, and friendly staff. Highly recommend for any home care needs."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">JL</div>
+                        <div><strong>John L.</strong><br>Jaro</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">Care<span>Med</span></div>
+                <p>Providing the highest standard of medical equipment rentals and sales since 2010.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Rental Policy</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><span class="material-symbols-outlined footer-icon-small">call</span> +63 912 345 6789</p>
+                <p><span class="material-symbols-outlined footer-icon-small">mail</span> support@caremed.com</p>
+                <p><span class="material-symbols-outlined footer-icon-small">location_on</span> Oñte de leon, Mandurrio,
+                    Iloilo City</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 CareMed Medical Systems. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('productSearch').addEventListener('input', function (e) {
+            const term = e.target.value.toLowerCase();
+            const products = document.querySelectorAll('.product-card');
+            products.forEach(product => {
+                const name = product.getAttribute('data-name').toLowerCase();
+                product.style.display = name.includes(term) ? 'flex' : 'none';
+            });
+        });
+
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('show');
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.closest('.user-profile-widget')) {
+                const dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

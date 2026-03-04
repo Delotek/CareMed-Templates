@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareMed | Register</title>
+    <link rel="stylesheet" href="static/css/registration.css">
+</head>
+<body>
+
+<div class="auth-card register">
+    <div class="brand-header">
+        <div class="brand-logo">Care<span>Med</span></div>
+        <div class="brand-sub">Join Our Community</div>
+    </div>
+
+    <form id="regForm">
+        <div class="form-row">
+            <div class="input-group form-col">
+                <label>First Name</label>
+                <input type="text" placeholder="Juan" required>
+            </div>
+            <div class="input-group form-col">
+                <label>Last Name</label>
+                <input type="text" placeholder="Dela Cruz" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group form-col">
+                <label>Birth Day</label>
+                <input type="date" required>
+            </div>
+            <div class="input-group form-col">
+                <label>Gender</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Contact No.</label>
+            <input type="tel" placeholder="09XX XXX XXXX" required>
+        </div>
+
+        <div class="input-group">
+            <label>Address</label>
+            <textarea rows="2" placeholder="Street, Barangay, City" required></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Email Account</label>
+            <input type="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group form-col">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            <div class="input-group form-col">
+                <label>Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="••••••••" required>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-accent">CREATE ACCOUNT</button>
+    </form>
+
+    <div class="footer-text">
+        <span style="color: #888;">Already have an account?</span> 
+        <a href="login.html" style="color: #52B788;">Sign In</a>
+    </div>
+</div>
+
+</body>
+</html>

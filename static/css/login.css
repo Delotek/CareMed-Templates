@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+    background-image: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.auth-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-logo {
+    color: #002347; 
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.brand-logo span {
+    color: #52B788; 
+}
+
+.brand-sub {
+    color: #00a8cc;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #002347; 
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #52B788; 
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #002347; 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #003366; 
+}
+
+.btn-accent {
+    background: #52B788;
+}
+
+.btn-accent:hover {
+    background: #40916c;
+}
+
+.divider {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.divider::before, 
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.email-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+
+.email-icon-btn:hover {
+    border-color: #00a8cc;
+    color: #00a8cc;
+}
+
+.mail-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background: #52B788;
+    display: inline-block;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>') no-repeat center;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background: #ffffff;
+        padding: 15px;
+    }
+
+    .auth-card {
+        box-shadow: none;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0; 
+    }
+
+    .form-col, 
+    .input-group,
+    input, 
+    select {
+        width: 100% !important;
+        display: block;
+    }
+
+    .brand-logo {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    body {
+        padding: 10px;
+        background: #ffffff; 
+    }
+
+    .auth-card {
+        padding: 20px 15px; 
+        border-radius: 0;  
+    }
+
+    .brand-logo {
+        font-size: 24px;
+    }
+
+    .brand-sub {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0; 
+    }
+
+    .input-group {
+        margin-bottom: 15px; 
+    }
+
+    .input-group label {
+        font-size: 13px;
+    }
+
+    input, select, textarea {
+        padding: 10px; 
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+    }
+    
+    .footer-text a {
+        display: block; 
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}
