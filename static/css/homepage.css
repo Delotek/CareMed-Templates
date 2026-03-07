@@ -115,16 +115,16 @@ body.logged-in .dropdown-menu.show {
 .nav-cta-btn {
     background-color: #002347; 
     color: white !important;
-    padding: 12px 28px;
+    padding: 5px 28px;
     border-radius: 8px; 
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
 .nav-cta-btn:hover {
-    background-color: #38BDF8; /* Updated Hover State */
+    background-color: #38BDF8;
     transform: translateY(-1px);
 }
 
